@@ -9,7 +9,7 @@
 import XCTest
 
 class MyTwitterAppUITests: XCTestCase {
-        
+
     override func setUp() {
         super.setUp()
         
@@ -28,7 +28,7 @@ class MyTwitterAppUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testExample() {        
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

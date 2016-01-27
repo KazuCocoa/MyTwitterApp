@@ -1,0 +1,12 @@
+PODS:
+  - DHSmartScreenshot (1.3.1)
+
+DEPENDENCIES:
+  - DHSmartScreenshot
+
+SPEC CHECKSUMS:
+  DHSmartScreenshot: ee749048bd7126c4826748f98df3a4adc6ad6c78
+
+PODFILE CHECKSUM: 8f4a975aad64896ae53d5036b21ad029a907980d
+
+COCOAPODS: 1.0.0.beta.2
