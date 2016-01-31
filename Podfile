@@ -5,7 +5,7 @@ use_frameworks!
 
 
 target 'MyTwitterApp' do
-
+  pod 'DHSmartScreenshot'
 end
 
 target 'MyTwitterAppTests' do
