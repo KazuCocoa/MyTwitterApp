@@ -8,6 +8,7 @@
 
 import UIKit
 import pop
+import Alamofire
 
 class DetailViewController: UIViewController {
 
@@ -62,6 +63,19 @@ class DetailViewController: UIViewController {
         case true:
             self.isTapped = false
             self.scaleDownView(myView)
+
+            Alamofire.request(.GET, "https://api.github.com/users/KazuCocoa")
+                .responseJSON { response in
+                    print(response.request)  // original URL request
+                    print(response.response) // URL response
+                    print(response.data)     // server data
+                    print(response.result)   // result of response serialization
+
+                    if let JSON = response.result.value {
+                        self.detailDescriptionLabel.text = JSON as? String
+                    }
+            }
+
         case false:
             self.isTapped = true
             self.scaleUpView(myView)
