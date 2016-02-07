@@ -16,7 +16,7 @@
 		7243E5451C590AEF00591412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7243E5431C590AEF00591412 /* LaunchScreen.storyboard */; };
 		7243E5501C590AF000591412 /* MyTwitterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243E54F1C590AF000591412 /* MyTwitterAppTests.swift */; };
 		7243E55B1C590AF000591412 /* MyTwitterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243E55A1C590AF000591412 /* MyTwitterAppUITests.swift */; };
-		724C34BE1C5E53EB0010EB9C /* MyTwitter-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 724C34BB1C5E503E0010EB9C /* MyTwitter-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72DE72581C6772140027FE5B /* MyTwitterApp-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 724C34BB1C5E503E0010EB9C /* MyTwitterApp-Bridging-Header.h */; };
 		91800F1E0E2536CED2A0B318 /* Pods_MyTwitterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01693E3158D4437FAB6C8B6 /* Pods_MyTwitterApp.framework */; };
 		C0640F4902CAE35093AAD0EE /* Pods_MyTwitterAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2770F39FF52611BEB83F2D7 /* Pods_MyTwitterAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -57,7 +57,7 @@
 		7243E5561C590AF000591412 /* MyTwitterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTwitterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7243E55A1C590AF000591412 /* MyTwitterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTwitterAppUITests.swift; sourceTree = "<group>"; };
 		7243E55C1C590AF000591412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		724C34BB1C5E503E0010EB9C /* MyTwitter-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyTwitter-Bridging-Header.h"; sourceTree = "<group>"; };
+		724C34BB1C5E503E0010EB9C /* MyTwitterApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyTwitterApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		7D4A142E26A3137DBF640294 /* Pods-MyTwitterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTwitterApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTwitterApp/Pods-MyTwitterApp.release.xcconfig"; sourceTree = "<group>"; };
 		81C1E07CE9C41E71787D787E /* Pods-MyTwitterAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTwitterAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTwitterAppTests/Pods-MyTwitterAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		D01693E3158D4437FAB6C8B6 /* Pods_MyTwitterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTwitterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +141,7 @@
 		7243E5371C590AEF00591412 /* MyTwitterApp */ = {
 			isa = PBXGroup;
 			children = (
-				724C34BB1C5E503E0010EB9C /* MyTwitter-Bridging-Header.h */,
+				724C34BB1C5E503E0010EB9C /* MyTwitterApp-Bridging-Header.h */,
 				7243E5381C590AEF00591412 /* AppDelegate.swift */,
 				7243E53A1C590AEF00591412 /* MasterViewController.swift */,
 				7243E53C1C590AEF00591412 /* DetailViewController.swift */,
@@ -178,7 +178,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				724C34BE1C5E53EB0010EB9C /* MyTwitter-Bridging-Header.h in Headers */,
+				72DE72581C6772140027FE5B /* MyTwitterApp-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +545,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/MyTwitter-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/MyTwitterApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -584,7 +584,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/MyTwitter-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/MyTwitterApp-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -600,7 +600,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazucocoa.example.MyTwitterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/MyTwitter-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/MyTwitterApp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -614,7 +614,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazucocoa.example.MyTwitterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/MyTwitter-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/MyTwitterApp-Bridging-Header.h";
 			};
 			name = Release;
 		};

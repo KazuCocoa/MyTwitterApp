@@ -6,10 +6,12 @@ use_frameworks!
 
 target 'MyTwitterApp' do
   pod 'DHSmartScreenshot'
+  pod 'pop', '~> 1.0'
+  pod 'Alamofire', '~> 3.0'
 end
 
 target 'MyTwitterAppTests' do
-
+    
 end
 
 target 'MyTwitterAppUITests' do
